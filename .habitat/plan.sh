@@ -18,7 +18,7 @@ pkg_origin=yourse1f-yourorg
 pkg_name=todos
 
 #       Package formal release version.  E.g. --  pkg_version=0.1.1
-pkg_version=0.0.37
+pkg_version=0.0.38
 
 #        How you wish to be identified.  E.g. --  pkg_maintainer="Yourself <yourse1f.yourorg@gmail.com>"
 pkg_maintainer="You Yourself <yourse1f-yourorg@gmail.com>"
@@ -98,7 +98,7 @@ do_build() {
   else
     build_line "Build. Error:";
     build_line "A previously built Meteor bundle is required in the directory './.habitat/results/.";
-    build_line "You need to execute the following command (or sumilar) before using 'hab'";
+    build_line "You need to execute the following command (or similar) before using 'hab'";
     build_line "  meteor build ./.habitat/results --directory; # --server-only;";
     exit_with "Follow the instructions above and repeat." 55;
   fi;
